@@ -8,7 +8,7 @@ class Palindrome{
 		//counting the number of digits by using Math.log10
 		//also sometime u req to declare some addition  varialble then make another method
 		
-		int digits = (int)Math.log10(num)+1;
+		int digits = (int)Math.log10(num)+1; //it gives number of digits
 		
 		return helper(num,digits);
 		
@@ -17,7 +17,7 @@ class Palindrome{
 	
 		public static int helper(int num, int digits){
 			
-			if(num%10==num){
+			if(num%10==num){		//if single digit number given then palindrome the number itself
 				return num;
 			}
 			
